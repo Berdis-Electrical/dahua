@@ -546,7 +546,7 @@ class DahuaDataUpdateCoordinator(DataUpdateCoordinator):
         https://dahuawiki.com/Template:NameConvention
         """
         m = self.model.upper()
-        return "-AS-PV" in m or "L46N" in m or m.startswith("W452ASD")
+        return "-AS-PV" in m or "-A-PV-" in m or "L46N" in m or m.startswith("W452ASD")
 
     def supports_security_light(self) -> bool:
         """
